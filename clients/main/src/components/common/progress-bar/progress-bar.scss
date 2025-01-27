@@ -1,0 +1,17 @@
+.MuiLinearProgress-root {
+  background-color: $white;
+
+  &.MuiLinearProgress-colorPrimary {
+    background-color: $black-shadow;
+  }
+}
+
+.linear-progress-bar .MuiLinearProgress-bar {
+  background-color: $primary-button-background;
+}
+
+.progress-box {
+  align-self: center;
+  width: 100%;
+  color: $white;
+}

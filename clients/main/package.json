@@ -1,0 +1,41 @@
+{
+  "name": "client-main",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5176",
+    "build": "tsc && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@hilma/auth-client": "^2.0.0",
+    "@hilma/fileshandler-client": "^0.0.42",
+    "@hilma/forms": "^3.1.1",
+    "@hilma/i18n": "^0.4.0",
+    "@hilma/tools": "^1.1.0",
+    "@mui/icons-material": "^6.2.0",
+    "@mui/material": "^6.1.10",
+    "@tanstack/react-query": "^5.62.8",
+    "axios": "^1.7.7",
+    "clsx": "^2.1.1",
+    "immer": "^10.1.1",
+    "react": "^18.3.1",
+    "react-device-detect": "^2.2.3",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.0.2",
+    "uuid": "^11.0.3"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.4",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "sass": "^1.81.0",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.1",
+    "vite-tsconfig-paths": "^4.3.2"
+  }
+}

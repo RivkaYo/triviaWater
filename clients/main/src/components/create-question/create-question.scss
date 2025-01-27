@@ -1,0 +1,76 @@
+.create-question-container {
+  .white-card {
+    box-shadow: inset -8px 0 0 0 $light-gray;
+    width: 100%;
+  }
+
+  .white-card-stack {
+    padding: 2rem;
+
+    .title-stack {
+      justify-content: flex-start;
+      align-items: center;
+      padding-bottom: 1.5rem;
+      text-align: right;
+    }
+
+    .title-text-field {
+      .MuiInputBase-input {
+        border: 1px solid $white;
+        border-radius: 8px;
+        padding: 0.3rem;
+
+        &:hover {
+          border: 1px solid $light-gray;
+        }
+
+        &::placeholder {
+          opacity: 1;
+        }
+      }
+    }
+
+    .has-uploaded-image {
+      width: 100%;
+      height: 4rem;
+      object-fit: contain;
+    }
+
+    .file-input {
+      display: none;
+    }
+
+    .add-answer-box {
+      display: flex;
+      justify-content: flex-start;
+
+      .img-icon {
+        margin: 0 0.8rem 0 1rem;
+        height: 1rem;
+      }
+    }
+
+    .add-image-icon {
+      margin-right: 1rem;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    .add-btn-text {
+      opacity: 0.5;
+      color: $black;
+      font-weight: 300;
+      text-decoration: underline;
+    }
+
+    .single-answer {
+      direction: ltr;
+    }
+
+    .action-btn {
+      opacity: 0.5;
+      padding: 1.5%;
+      width: 1.2rem;
+    }
+  }
+}

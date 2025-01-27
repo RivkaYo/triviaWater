@@ -1,0 +1,34 @@
+.create-quiz-page {
+  box-sizing: border-box;
+  padding: 1rem;
+  width: 70%;
+
+  .monkey {
+    position: fixed;
+    right: 1vw;
+    bottom: 1vh;
+    width: 6vw;
+  }
+
+  .create-quiz-page-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: -1rem;
+
+    .questions-container {
+      display: flex;
+      flex-direction: column;
+      gap: 5vh;
+
+      .white-card {
+        margin: 0;
+      }
+    }
+
+    .plus-button {
+      align-self: center;
+      height: 3rem;
+    }
+  }
+}

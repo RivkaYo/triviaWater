@@ -1,0 +1,42 @@
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  * {
+    color: $primary-text;
+    direction: rtl;
+  }
+
+  .all-content-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+
+    .content-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      margin-top: 3rem;
+      padding-right: 8%;
+
+      .layout-title {
+        font-weight: 900;
+        font-size: 4.5rem;
+      }
+
+      .layout-description {
+        font-weight: 500;
+        font-size: 2.2rem;
+      }
+    }
+
+    .layout-monkey {
+      align-self: flex-end;
+      margin-bottom: 10vh;
+      margin-left: 5%;
+    }
+  }
+}

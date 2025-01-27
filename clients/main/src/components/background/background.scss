@@ -1,0 +1,29 @@
+.web-background {
+  position: relative;
+  background-color: $primary-bg-color;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+
+  .leaf {
+    position: fixed;
+    top: 0;
+    margin-top: 3.5rem;
+    width: 15vw;
+  }
+
+  .left-leaf {
+    left: 0;
+  }
+
+  .right-leaf {
+    right: 0;
+  }
+
+  .background-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+}

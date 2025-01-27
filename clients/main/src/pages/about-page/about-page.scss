@@ -1,0 +1,76 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0.5rem 3rem 0 0;
+
+  .gold-medal {
+    position: absolute;
+    top: 3.8rem;
+    opacity: 0.3;
+    margin: 0;
+    padding: 0;
+    height: 30rem;
+  }
+
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .about-us {
+    margin-right: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .team-list {
+    display: flex;
+    gap: 2rem;
+    margin-right: 2.2rem;
+
+    .list-title {
+      font-size: 1.4rem;
+    }
+
+    .list-body {
+      font-size: 1.2rem;
+    }
+  }
+
+  .hello-monkey {
+    position: absolute;
+    bottom: 5.8rem;
+    left: 11rem;
+    margin: 0;
+
+    .hello-monkey-img {
+      height: 22rem;
+    }
+  }
+
+  .thanks-head {
+    align-self: center;
+    font-size: 1.5rem;
+  }
+
+  .thanks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+
+    .thanks-for {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 0 10px $black-with-opacity;
+      padding: 1.5rem;
+      width: 23rem;
+
+      .thanks-title {
+        font-size: 1.4rem;
+        text-decoration: underline;
+      }
+    }
+  }
+}

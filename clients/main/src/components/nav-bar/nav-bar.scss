@@ -1,0 +1,63 @@
+.nav-bar-button {
+  cursor: pointer;
+  border: none;
+  background-color: $white;
+
+  &:disabled {
+    cursor: default;
+  }
+}
+
+.nav-bar {
+  display: flex;
+  border-bottom: 4px solid $primary-text;
+  padding-inline: 1.875rem;
+  padding-block: 0.625rem;
+
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    .home-button {
+      color: $primary-text;
+      font-weight: bold;
+    }
+
+    .logo {
+      height: 1.5rem;
+    }
+  }
+
+  .navbar-buttons-container {
+    display: flex;
+    flex-grow: 1;
+
+    .create-quiz-button {
+      border-radius: 8px;
+      background-color: $primary-button-background;
+      padding-inline: 1.25rem;
+      padding-block: 0.4375rem;
+      color: $white;
+      font-weight: bold;
+
+      &:disabled {
+        opacity: 0.5;
+      }
+    }
+
+    .navbar-links-container {
+      display: flex;
+      align-self: center;
+
+      .nav-divider {
+        margin: 0 1rem;
+        border-color: $primary-text;
+      }
+
+      .link-button {
+        color: $primary-text;
+      }
+    }
+  }
+}

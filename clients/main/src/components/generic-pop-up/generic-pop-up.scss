@@ -1,0 +1,38 @@
+.custom-dialog {
+  border-radius: 7px;
+  padding: 0.3rem 1.7rem;
+  width: 23.125rem;
+  height: auto;
+}
+
+.MuiTypography-root.MuiTypography-h6.MuiDialogTitle-root {
+  margin-top: 0.625rem;
+  margin-right: 0.625rem;
+  color: $primary-text;
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.MuiDialogContentText-root.MuiTypography-body1 {
+  opacity: 0.7;
+  margin-right: 0.9375rem;
+  padding-bottom: 1.25rem;
+  color: $primary-text;
+  font-size: 0.7rem;
+}
+
+.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary.agree-button {
+  border-radius: 3.125rem;
+  background-color: $primary-button-background;
+  padding: 0.3rem 1.7rem;
+  color: $white;
+  font-weight: bold;
+  font-size: 0.6875rem;
+}
+
+.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary.cancel-button {
+  color: $primary-button-background;
+  font-weight: bold;
+  font-size: 0.7813rem;
+  text-decoration: underline;
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "workspaces": {
+    ".": {
+      "rules": {
+        "exports": "off",
+        "types": "off"
+      }
+    },
+    "clients/*": {
+      "entry": ["src/main.tsx"],
+      "project": ["src/**/*.{ts,tsx}"]
+    },
+    "server": {
+      "entry": ["src/main.ts"],
+      "project": ["src/**/*.ts"]
+    }
+  },
+  "ignoreWorkspaces": ["scripts"],
+  "ignore": ["types/index.d.ts"]
+}

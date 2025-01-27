@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+
+  .end-quiz-stack-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/gifs/confetti.gif") no-repeat center center/cover;
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+
+    .end-quiz-stack {
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      background-color: $white;
+      padding-right: 3rem;
+      padding-left: 3rem;
+      width: 37rem;
+      text-align: center;
+
+      .MuiButtonBase-root {
+        gap: 1rem;
+        box-shadow: 0 0.3rem $primary-button-shadow;
+        background-color: $primary-button-background;
+        padding: 0.5rem, 2rem;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .dabbing-monkey {
+    width: 8rem;
+  }
+
+  .score-sentence {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  .share-sentence {
+    font-size: 1.3rem;
+    direction: rtl;
+  }
+}

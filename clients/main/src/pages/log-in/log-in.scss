@@ -1,0 +1,64 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+
+    .input-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      .input-label {
+        font-weight: 400;
+        font-size: 1.6rem;
+      }
+
+      .input-field {
+        border: 0.2px solid $log-in-input-border;
+        border-radius: 5px;
+        background-color: $log-in-bg-input;
+        padding: 0.8rem 1rem;
+        font-size: 1.6rem;
+      }
+    }
+
+    .submit-button {
+      cursor: pointer;
+      border: 1px solid $primary-button-background;
+      border-radius: 5px;
+      background-color: $primary-button-background;
+      padding: 1rem;
+      max-width: 100%;
+      height: auto;
+      color: $white;
+      font-weight: bold;
+      font-size: 1.5rem;
+
+      &:hover {
+        background-color: $primary-button-background;
+      }
+    }
+  }
+
+  .register-question {
+    align-self: end;
+    color: $primary-button-shadow;
+
+    .register-link {
+      color: $primary-button-shadow;
+      font-weight: 400;
+      font-size: 1rem;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

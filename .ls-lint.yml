@@ -1,0 +1,41 @@
+ls:
+  .dir: kebab-case | regex:\..+
+
+  .config.js: kebab-case
+  .js: kebab-case
+  .scss: kebab-case
+  .ts: kebab-case
+  .d.ts: kebab-case
+  .interface.ts: kebab-case
+  .function.ts: kebab-case
+  .enum.ts: kebab-case
+  .config.ts: kebab-case
+  .constant.ts: kebab-case
+  .text.ts: kebab-case
+  .queries.ts: kebab-case
+  .api.ts: kebab-case
+  .regex.ts: kebab-case
+  .mutations.ts: kebab-case
+  .tsx: PascalCase | regex:main
+  .hook.tsx: regex:use-[-a-z0-9]+
+
+  "{server/src,server/src/*}":
+    .dto.ts: kebab-case
+    .controller.ts: kebab-case
+    .service.ts: kebab-case
+    .module.ts: kebab-case
+    .entity.ts: kebab-case
+
+ignore:
+  - ".husky"
+  - ".git"
+  - "node_modules"
+  - "{internal,clients}/*/node_modules"
+  - "{server,scripts}/node_modules"
+  - "{internal,clients}/*/dist"
+  - "{server,scripts}/dist"
+  - ".turbo"
+  - "{internal,clients}/*/.turbo"
+  - "{server,scripts}/.turbo"
+  - "clients/*/{android,ios}"
+  - ".eslintrc.js"

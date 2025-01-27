@@ -1,0 +1,175 @@
+.quiz-description-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    margin-top: 0.0625rem;
+    background-color: $white;
+    width: 46.625rem;
+    height: 14.47rem;
+
+    .title {
+      margin-top: 0;
+      width: 46.625rem;
+      height: 2.84rem;
+      color: $primary-text;
+      font-weight: 500;
+      font-size: 2.39rem;
+      line-height: 2.84rem;
+      letter-spacing: 0;
+      text-align: center;
+    }
+
+    .description {
+      margin-top: 3.64rem;
+      width: 41.94rem;
+      height: 2.84rem;
+      color: $primary-text;
+      font-size: 1.14rem;
+      line-height: 1.48rem;
+      letter-spacing: 0;
+      text-align: right;
+      overflow-wrap: break-word;
+    }
+  }
+
+  .img-container {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    margin-top: 6.29rem;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 77.14rem;
+    height: 37.3125rem;
+
+    .start-game-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.91rem;
+      cursor: pointer;
+      margin-top: 15.17rem;
+      box-shadow: inset 0 -0.68rem 0 -0.057rem $primary-button-shadow;
+      border: 0.17rem solid $white;
+      border-radius: 7.27px;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-clip: padding-box;
+      background-color: $primary-button-background;
+      padding-top: 1.5rem;
+      padding-bottom: 2rem;
+      width: 17.03rem;
+      height: 5rem;
+
+      .button-text {
+        width: 8.86rem;
+        height: 1.76rem;
+        color: $white;
+        font-weight: bold;
+        font-size: 1.48rem;
+        line-height: 1.76rem;
+        letter-spacing: 0;
+        text-align: center;
+      }
+
+      .arrow-img {
+        width: 1.19rem;
+        height: 1.36rem;
+      }
+    }
+  }
+}
+
+@media only screen and (width <= 768px) {
+  .white-card {
+    border: none;
+  }
+
+  .quiz-description-container {
+    display: flex;
+    flex-direction: column;
+    border-top: 4px solid $log-in-bg-input;
+    border-radius: 0%;
+    width: 100%;
+    height: 80vh;
+    overflow-x: hidden;
+
+    .description {
+      position: relative;
+      z-index: 0;
+      background-color: $white;
+      width: 100%;
+      text-align: center;
+
+      .title {
+        z-index: 0;
+        margin-bottom: 4rem;
+        width: 80%;
+        color: $primary-text;
+        font-weight: 500;
+        font-size: 1.68rem;
+        line-height: 2rem;
+      }
+
+      .description {
+        margin: 0 auto 1rem;
+        padding-bottom: 4rem;
+        width: 80%;
+        max-width: 90%;
+        color: $primary-text;
+        font-weight: lighter;
+        font-size: 1.15rem;
+        line-height: 1.5rem;
+        direction: rtl;
+        text-align: center;
+      }
+    }
+
+    .img-container {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: -3rem;
+      width: 80%;
+      height: 20vh;
+
+      .start-game-button {
+        margin: 5rem;
+        margin-bottom: -20rem;
+        box-shadow: 0 7px 6px $primary-button-shadow;
+        border: none;
+        border-radius: 7.27px;
+        background-color: $primary-button-background;
+        width: 100%;
+        height: 5rem;
+
+        .button-text {
+          width: fit-content;
+          color: $white;
+          font-size: 1.7rem;
+        }
+
+        .arrow-img {
+          width: 2rem;
+          height: 1.7rem;
+        }
+      }
+    }
+  }
+}

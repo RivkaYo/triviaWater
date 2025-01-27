@@ -1,0 +1,137 @@
+.quiz-item-container {
+  display: flex;
+  position: relative;
+  gap: 2.5%;
+  box-shadow: 0 0.1875rem 0.375rem $black-shadow;
+  width: 93.18%;
+  height: 10rem;
+
+  .image-container {
+    position: relative;
+    background-color: $image-container-background-color;
+    width: 40%;
+
+    .quiz-image {
+      display: flex;
+      align-content: center;
+      height: 10rem;
+    }
+
+    .question-number {
+      display: flex;
+      position: absolute;
+      top: 7.7rem;
+      left: 1rem;
+      justify-content: center;
+      transform: translateY(-50%);
+      border-radius: 16px;
+      background-color: $black-with-opacity;
+      width: 6.0625rem;
+      height: 1.6875rem;
+
+      .text {
+        margin: 0;
+        color: $white;
+        font-size: 1rem;
+        line-height: 1.625rem;
+        letter-spacing: 0;
+        text-align: center;
+      }
+    }
+  }
+
+  .buttons-and-text {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: content-box;
+    width: 100%;
+
+    .body {
+      display: flex;
+      top: 0;
+      flex-direction: column;
+      gap: 0.625rem;
+      padding-top: 0.875rem;
+      width: 100%;
+      height: 4.875rem;
+
+      .title {
+        display: block;
+        top: 1.375rem;
+        width: 31rem;
+        overflow: hidden;
+        font-weight: 600;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .subtitle {
+        display: block;
+        width: 31.875rem;
+        overflow: hidden;
+        font-weight: 300;
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+        letter-spacing: 0;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+
+    .all-buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 0.6rem;
+      width: 100%;
+      height: 5.125rem;
+
+      .button-for-result {
+        cursor: pointer;
+        margin-top: 1rem;
+        border: none;
+        border-radius: 50px;
+        background-color: $primary-button-background;
+        width: 9.6875rem;
+        height: 2.5rem;
+        color: $white;
+        font-weight: bold;
+      }
+
+      .buttons-container {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1.5625rem;
+        margin-left: 1.25rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        width: 9.6875rem;
+        height: 2.5rem;
+
+        .control-button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          box-shadow: 0 0.1875rem 0.375rem $black-shadow;
+          border: none;
+          border-radius: 50%;
+          background: transparent;
+          padding: 1.5rem 0.7rem;
+          width: 3.125rem;
+        }
+
+        .control-img {
+          width: 1.5rem;
+          height: 1.375rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.white-card {
+  margin: auto;
+  margin-top: 3%;
+  border: 4px solid $primary-text;
+  border-radius: 10px;
+  background-color: $white;
+  overflow-y: auto;
+  scrollbar-width: none;
+  color: $primary-text;
+}

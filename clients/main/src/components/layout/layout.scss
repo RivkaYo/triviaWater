@@ -1,0 +1,12 @@
+@import "../../style/colors";
+
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

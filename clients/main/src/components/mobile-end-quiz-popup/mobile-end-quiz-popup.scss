@@ -1,0 +1,78 @@
+.mobile-end-quiz {
+  margin: 0;
+  background: url("/gifs/confetti.gif") no-repeat center center/cover;
+
+  .MuiPaper-root {
+    margin: 0;
+    overflow: visible;
+  }
+
+  * {
+    text-align: center;
+  }
+
+  .dabbing-monkey {
+    position: absolute;
+    top: -2.5rem;
+    right: 34%;
+    z-index: 2;
+    height: 6rem;
+  }
+
+  .end-quiz-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: $white;
+    padding: 4rem 2rem;
+    width: 100%;
+
+    .success-sentence {
+      color: $primary-text;
+      font-weight: 800;
+      font-size: 2rem;
+    }
+
+    .score-sentence {
+      color: $primary-text;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+
+    .button-container {
+      display: flex;
+      gap: 0.4rem;
+
+      .end-quiz-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        border-radius: 8px;
+        padding: 0.4rem 0.5rem;
+
+        .MuiButton-icon {
+          margin: 0;
+        }
+
+        .button-text {
+          font-weight: bold;
+          font-size: 0.8rem;
+        }
+      }
+
+      .share-button {
+        box-shadow: 0 0.15rem $primary-button-shadow;
+        background-color: $primary-button-background;
+      }
+
+      .home-page-button {
+        box-shadow: 0 0.15rem $secondary-button-background-shadow;
+        background-color: $secondary-button-background;
+      }
+    }
+  }
+}

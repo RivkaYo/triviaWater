@@ -1,0 +1,102 @@
+.mobile-quiz-item-container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0.1875rem 0.375rem $black-shadow;
+  border-radius: 4px;
+  width: 100%;
+  direction: rtl;
+
+  .quiz-image {
+    border-radius: 4px;
+    height: 8.43rem;
+  }
+
+  .on-top-of-quiz-image {
+    border-radius: 4px;
+    background-color: $light-gray;
+    height: 8.43rem;
+  }
+
+  .question-number {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    transform: translateY(-120%);
+    margin-left: 0.25rem;
+    border-radius: 10px;
+    background-color: $black-with-opacity;
+    width: 6.0625rem;
+    height: 1.6875rem;
+
+    .text {
+      color: $white;
+      font-size: 1rem;
+      line-height: 1.625rem;
+      letter-spacing: 0;
+      text-align: center;
+    }
+  }
+
+  .buttons-and-text {
+    display: flex;
+    position: relative;
+    gap: 15%;
+    padding: 0.3rem;
+
+    .menu-button {
+      align-self: start;
+      margin-top: -1.125rem;
+      margin-right: 0;
+      color: $primary-text;
+    }
+
+    .quiz-menu-container {
+      position: absolute;
+      z-index: 10;
+      margin-top: -0.625rem;
+      margin-right: 1.25rem;
+
+      .quiz-menu {
+        position: absolute;
+        z-index: 10;
+        margin-top: -0.625rem;
+        margin-right: 1.25rem;
+        box-shadow: none;
+        padding: 0;
+
+        .top-item {
+          border-top-right-radius: 10px;
+          border-top-left-radius: 10px;
+        }
+
+        .bottom-item {
+          border-bottom-right-radius: 10px;
+          border-bottom-left-radius: 10px;
+        }
+
+        .quiz-menu-item {
+          gap: 0.6rem;
+          cursor: pointer;
+          box-shadow: 0 0.1875rem 0.375rem $black-shadow;
+          background-color: $white;
+          width: 13.4375rem;
+          color: $primary-text;
+          font-size: 0.9375rem;
+
+          .image-menu {
+            width: 0.9875rem;
+            height: 0.9875rem;
+          }
+        }
+      }
+    }
+
+    .quiz-title {
+      align-self: center;
+      margin-top: -1.25rem;
+      color: $primary-text;
+      font-weight: 600;
+      font-size: 1.375rem;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.playing-from-web-page-container {
+  display: flex;
+  align-items: center;
+  height: 70vh;
+
+  .error-text {
+    color: $primary-text;
+    font-size: 3rem;
+  }
+}

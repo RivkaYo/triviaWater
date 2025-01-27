@@ -1,0 +1,130 @@
+.start-game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  padding: 2rem;
+
+  .title {
+    margin-top: 1.4375rem;
+    width: max-content;
+    max-width: 82.5rem;
+    height: 3.125rem;
+    color: $primary-text;
+    font-weight: 500;
+    font-size: 2.625rem;
+    line-height: 3.125rem;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  .what-your-name {
+    margin-top: 9.6875rem;
+    width: 11.875rem;
+    height: 1.9375rem;
+    color: $primary-text;
+    font-size: 1.625rem;
+    line-height: 1.9375rem;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  .enter-your-name {
+    opacity: 0.7;
+    box-sizing: border-box;
+    margin-top: 1.75rem;
+    border: 1px solid $primary-text;
+    border-radius: 10px;
+    background-color: $white;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    width: 21.625rem;
+    height: 4rem;
+    color: $primary-text;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+    text-align: right;
+  }
+
+  .start-game-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-top: 4.9375rem;
+    box-shadow: inset 0 -5px 0 -1px $primary-button-shadow;
+    border: 0.1872px solid $white;
+    border-bottom: none;
+    border-radius: 8px;
+    background-color: $primary-button-background;
+    width: 21.625rem;
+    height: 4rem;
+
+    &:disabled {
+      cursor: auto;
+      box-shadow: inset 0 -5px 0 -1px $disabled-primary-button-shadow;
+      background-color: $disabled-primary-button-background;
+    }
+
+    .button-text {
+      width: 12.625rem;
+      height: 1.9375rem;
+      color: $white;
+      font-weight: bold;
+      font-size: 1.625rem;
+      line-height: 1.9375rem;
+      letter-spacing: 0;
+      text-align: left;
+    }
+
+    .arrow-img {
+      width: 1.3125rem;
+      height: 1.5rem;
+    }
+  }
+}
+
+@media only screen and (width <= 768px) {
+  .start-game {
+    .what-your-name {
+      margin-top: 6rem;
+    }
+
+    .enter-your-name {
+      margin-top: 1.75rem;
+      width: 18.75rem;
+      font-size: 1rem;
+    }
+
+    .start-game-button {
+      justify-content: center;
+      align-items: center;
+      gap: 0;
+      margin-top: 9.46rem;
+      width: 18.75rem;
+      height: 4.95rem;
+      font-size: 1.25rem;
+      text-align: center;
+
+      .button-text {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        font-size: 1.25rem;
+        text-align: center;
+      }
+
+      .arrow-img {
+        margin: 0;
+        padding: 0;
+        width: 1.52rem;
+        height: 1.73rem;
+      }
+    }
+  }
+}
