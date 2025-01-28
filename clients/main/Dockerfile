@@ -24,15 +24,16 @@ FROM nginx:alpine
 
 # Remove default Nginx website
 RUN rm -rf /usr/share/nginx/html/*
-COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
-COPY ./nginx/nginxconfig.io/security.conf etc/nginx/nginxconfig.io/security.conf
-
+RUN rm /etc/nginx/conf.d/default.conf;
+COPY ./nginx /etc/nginx
 
 # Copy build files from the 'builder' stage to Nginx server directory
 COPY --from=builder /app/clients/main/dist /usr/share/nginx/html
 
 # Copy nginx configuration file
+COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
 EXPOSE 80
+#
 
 # Command to run Nginx
 CMD ["nginx", "-g", "daemon off;"]
