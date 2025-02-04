@@ -12,6 +12,7 @@ import { AnswerModule } from "./answer/answer.module";
 import { ScoreModule } from "./score/score.module";
 import { AuthModule } from "./auth/auth.module";
 import { FOLDER_PATH } from "./constants/files-handler-folder-path.const";
+import { HealthModule } from "./health/health/health.module";
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { FOLDER_PATH } from "./constants/files-handler-folder-path.const";
     AnswerModule,
     QuestionModule,
     ScoreModule,
+    HealthModule,
     ConfigModule.forRoot({
       envFilePath: [".env.development"],
       load: [config],
